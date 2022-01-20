@@ -4,6 +4,7 @@ body{
   background-color:#ffe4c4;
   margin: 0;
   padding: 0;
+  border: 0;
   font-size: 16px;
   font-weight: 500;
 }
@@ -11,9 +12,52 @@ body{
 header{
   margin: 0;
   padding: 0 10%;
-  background-color: black;
-  height: 50px; 
+  background-color: #808080;
+  height: 50px;  
 }
+
+
+main { 
+  background-color: #808080;   
+  height:350px;
+  padding: 0 10%;   
+  border: 0;
+  margin: 0;
+}
+
+
+.main-div{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/main.jpg");
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition-delay: 0.1s;
+  /* background-color: #201e1f; 
+  display: flex;   
+  justify-content: center; */
+}
+
+.main-a{
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.322);
+  text-decoration: none;
+}
+
+.main-a:hover{
+  font-size: 200px;
+  color: white;
+  text-decoration: none;
+}
+
 
 .logo{
   margin: 0;
@@ -62,6 +106,7 @@ nav ul{
 
 nav li{
   display: inline-block;   
+  float: right;
 }
 
 nav li a{   
@@ -82,81 +127,164 @@ nav li a{
 }
 
 
-
-
-
-
 .nav-li a:hover {
   background-color: #201e1f;
   color: #ffc801;
 }
 
-main {
-  background-color: #201e1f; 
-  color: #ffc801;    
-  height: 50%;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 10%;
-  padding-right: 10%;  
-}
-
-.main-div {
-  display:inline-block;
-  padding: 0;
-  margin: 0;  
-  width: 100%;   
-}
 
 
-.main-img{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  float: left;    
-  width: 60%;   
-}
-
-.main-div-texto {
-  float: left;
-  padding: 0;
-  margin: 0;      
-  width: 40%;    
-}
-
-.section-lght {
-  display: inline-block;
-  background-color: #ffc801; 
+section{
+  display:block;
+  background-color: #808080;
   color: #201e1f;   
   margin: 0;    
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 10%;
-  padding-right: 10%;     
+  padding-right: 10%;   
+  border: 0;
 }
 
-.section-drk {
-  display: inline-block;
-  background-color:  #201e1f; 
-  color: #ffc801;
+.div-section-album{
+  width: 100%;
+  height: 170px;
+  background-color: #424142;
+}
+
+
+.div-section-videos{
+  width: 100%;
+  height: 500px;
+  background-color: #42414273;
+  text-align: center;
+}
+
+.div-section-videos-titles{
+  width: 100%;
+  height: auto;
+  background-color: #42414273;
+  text-align: center;
+}
+
+
+.div-album{  
+  width: 25%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  float: left; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-album{  
+  width: 40%;   
+  border-radius: 50%;
+  padding: 5%;
+}
+
+.a-album{  
+  padding: 20px  5px;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.div-album a:hover{ 
+  text-decoration:underline;
+}
+
+h1{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  border: 0;
+  color:white;
+}
+
+h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  margin: 0;
+  border: 0;
+  color:white;
+}
+
+.div-video-box{
+  float: left;
+  border: 0;
+  margin: 0;
+  padding: 0;   
+  width: 33.3%;  
+  height: 250px;  
+  background-color: #42414273;
+}
+
+
+.img-video{
+  display: block;
+  width: 100%;  
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+.a-video{  
+  display: block;
+  padding: 10px ;
+  margin: 0;
+  border: 0;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.div-video-box a:hover{ 
+  text-decoration:underline;
+}
+
+.div-media{ 
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #424142;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  display:block;
+  background-color: #808080;
   margin: 0;    
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 10%;
-  padding-right: 10%;     
+  padding-right: 10%;   
+  border: 0;  
 }
 
-h1{
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 20px;
-  margin-bottom: 0;
-  margin-left: 0;
-  font-size: 40px;
-  font-weight: 500;
-  color:white;
+.footer-div{
+  width: 100%;
+  height: 500px;
+  background-color: blue;
+  text-align: center;
 }
-.p-drk{
-  color:white;    
-  padding-left: 20px; 
-  margin: 10px 0;   
+
+.footer-div-box{
+  float: left;
+  border: 0;
+  margin: 0;
+  padding: 0;   
+  width: 33.3%;  
+  height: 250px;  
+  background-color: #424142;
 }
